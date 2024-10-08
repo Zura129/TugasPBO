@@ -2,59 +2,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package encapsulation;
+package Inheritance;
 
 /**
  *
  * @author HP
  */
-class Rokok {
-    // Atribut private
-    private String merek;
-    private int harga;
-    private int stok;
 
-    // Constructor untuk menginisialisasi objek
-    public Rokok(String merek, int harga, int stok) {
-        this.merek = merek;
+public class Rokok {
+    protected String merk;
+    protected String jenis;
+    protected int harga;
+
+    // Constructor
+    public Rokok(String merk, String jenis, int harga) {
+        this.merk = merk;
+        this.jenis = jenis;
         this.harga = harga;
-        this.stok = stok;
-    }
-
-    // Getter untuk mendapatkan nilai merek
-    public String getMerek() {
-        return merek;
-    }
-
-    // Setter untuk mengubah nilai merek
-    public void setMerek(String merek) {
-        this.merek = merek;
-    }
-
-    // Getter untuk mendapatkan nilai harga
-    public int getHarga() {
-        return harga;
-    }
-
-    // Setter untuk mengubah nilai harga
-    public void setHarga(int harga) {
-        this.harga = harga;
-    }
-
-    // Getter untuk mendapatkan nilai stok
-    public int getStok() {
-        return stok;
-    }
-
-    // Setter untuk mengubah nilai stok
-    public void setStok(int stok) {
-        this.stok = stok;
     }
 
     // Method untuk menampilkan informasi rokok
     public void tampilkanInfo() {
-        System.out.println("Merek: " + merek);
-        System.out.println("Harga: Rp" + harga);
-        System.out.println("Stok: " + stok);
+        System.out.println("Merk: " + merk);
+        System.out.println("Jenis: " + jenis);
+        System.out.println("Harga: Rp " + harga);
     }
 }

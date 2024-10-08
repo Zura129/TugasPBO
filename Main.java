@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package encapsulation;
+package Inheritance;
 
 /**
  *
@@ -10,21 +10,15 @@ package encapsulation;
  */
 public class Main {
     public static void main(String[] args) {
-        // Membuat objek Rokok
-        Rokok rokok1 = new Rokok("Gudang Garam", 20000, 50);
-        Rokok rokok2 = new Rokok("Djarum Super", 22000, 30);
+        // Membuat objek dari masing-masing jenis rokok
+        Rokok rokokFilter = new RokokFilter("Gudang Garam", 25000, 1);
+        Rokok rokokElektrik = new RokokElektrik("VapeX", 150000, 1200);
 
-        // Menampilkan informasi rokok1
-        rokok1.tampilkanInfo();
+        // Menampilkan informasi masing-masing rokok
+        System.out.println("Informasi Rokok Filter:");
+        rokokFilter.tampilkanInfo();
 
-        System.out.println(); // Pemisah antar informasi
-
-        // Menampilkan informasi rokok2
-        rokok2.tampilkanInfo();
-
-        // Mengubah harga dan stok rokok1 menggunakan setter
-        rokok1.setHarga(21000);
-        rokok1.setStok(45);
+        System.out.println("\nInformasi Rokok Elektrik:");
+        rokokElektrik.tampilkanInfo();
     }
 }
-
